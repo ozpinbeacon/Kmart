@@ -152,8 +152,19 @@ struct Objects {
     }
 
     private mutating func insertMacDevice(using data: Data) throws {
-        let macDevice: MacDevice = try JSONDecoder().decode(MacDevice.self, from: data)
-        macDevices.append(macDevice)
+        do {
+            let macDevice: MacDevice = try JSONDecoder().decode(MacDevice.self, from: data)
+            
+            if macDevice.general.remoteManagement.managed {
+                macDevices.append(macDevice)
+            } else {
+                return
+            }
+        } catch {
+            print(error)
+        }
+        
+        
     }
 
     private mutating func insertMacDeviceHistory(using data: Data) throws {

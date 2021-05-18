@@ -12,6 +12,7 @@ struct MacDevice: Codable {
     var id: Int = -1
     var name: String = ""
     var serialNumber: String = ""
+    let general: General
     var lastCheckIn: Double = -1
     var lastInventory: Double = -1
     var building: String = ""
@@ -22,5 +23,17 @@ struct MacDevice: Codable {
             "name": name,
             "serial_number": serialNumber
         ]
+    }
+
+    struct General: Codable {
+        let remoteManagement: RemoteManagement
+    
+        enum CodingKeys: String, CodingKey {
+            case remoteManagement = "remote_management"
+        }
+    }
+    
+    struct RemoteManagement: Codable {
+        var managed: Bool = false
     }
 }

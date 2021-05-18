@@ -804,10 +804,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7K3HVCLV7Z;
+				DEVELOPMENT_TEAM = S7R8T3CSXY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ninxsoft.kmart;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethernetisoverrated.kmart;
 				PRODUCT_NAME = kmart;
 				SWIFT_VERSION = 5.0;
 			};
@@ -818,10 +818,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7K3HVCLV7Z;
+				DEVELOPMENT_TEAM = S7R8T3CSXY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ninxsoft.kmart;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethernetisoverrated.kmart;
 				PRODUCT_NAME = kmart;
 				SWIFT_VERSION = 5.0;
 			};
